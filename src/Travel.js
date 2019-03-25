@@ -4,8 +4,8 @@ const Travel = props => (
   <figure>
     <img src={props.photo} alt={props.country} />
     <figcaption>
-      <blockquote>{props.destination}</blockquote>
-      <cite>{props.distance}</cite>
+      <h1>pays:{props.destination}</h1>
+      <h2> distance : {props.distance}</h2>
     </figcaption>
   </figure>
 );
