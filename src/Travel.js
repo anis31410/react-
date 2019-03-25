@@ -2,7 +2,7 @@ import React from "react";
 
 const Travel = props => (
   <figure>
-    <img src={props.photo} alt={props.counstry} />
+    <img src={props.photo} alt={props.country} />
     <figcaption>
       <blockquote>{props.destination}</blockquote>
       <cite>{props.distance}</cite>
