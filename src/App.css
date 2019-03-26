@@ -2,12 +2,16 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
+.working {
+  animation: App-logo-spin-working infinite 4s linear;
   height: 40vmin;
   pointer-events: none;
 }
-
+.nowork {
+  animation: App-logo-spin-nowork infinite 0.5s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -23,11 +27,21 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
+@keyframes App-logo-spin-working {
   from {
     transform: rotate(0deg);
   }
   to {
-    transform: rotate(360deg);
+    transform: rotate(180deg);
+  }
+}
+
+
+@keyframes App-logo-spin-nowork {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
   }
 }

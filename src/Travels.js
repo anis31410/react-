@@ -35,7 +35,7 @@ distance:"1000 km"
 ] ;
 const Travels = () => (
     <div>
-      {travels.map(country => <Travel country={country.destination} photo={country.photo} distance={country.distance} country={country.country} />)}
+      {travels.map(country => <Travel country={country.country} photo={country.photo} distance={country.distance} destination={country.destination} />)}
     </div>
   );
 
